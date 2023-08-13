@@ -1,5 +1,11 @@
-<script setup></script>
+<template>
+  <div>
+    <BreadCrumbs />
+    <Grid />
+  </div>
+</template>
 
-<template></template>
-
-<style scoped></style>
+<script setup>
+import BreadCrumbs from '../components/Products/BreadCrumbs.vue'
+import Grid from '../components/Products/Grid.vue'
+</script>

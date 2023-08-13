@@ -15,6 +15,18 @@ const router = createRouter({
             name: 'contact',
             meta: { layout: 'DefaultLayout' },
             component: () => import('../views/Contact.vue')
+        },
+        {
+            path: '/products',
+            name: 'products',
+            meta: { layout: 'DefaultLayout' },
+            component: () => import('../views/Products.vue')
+        },
+        {
+            path: '/products/:id',
+            name: 'product',
+            meta: { layout: 'DefaultLayout' },
+            component: () => import('../views/Product.vue')
         }
     ]
 })

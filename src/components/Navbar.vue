@@ -1,5 +1,6 @@
 <script setup>
-// import { RouterLink } from 'vue-router'
+import SearchBar from './SearchBar.vue'
+import CartButton from './CartButton.vue'
 </script>
 
 <template>
@@ -11,12 +12,17 @@
           <router-link :to="{ name: 'home' }">home</router-link>
         </li>
         <li class="mx-4 transition-all duration-150 hover:text-blue-300">
+          <router-link :to="{ name: 'products' }"> products</router-link>
+        </li>
+        <li class="mx-4 transition-all duration-150 hover:text-blue-300">
           <router-link :to="{ name: 'contact' }"> contact</router-link>
         </li>
-        <!-- <li><RouterLink :to="{name:''}" /></li> -->
       </ul>
     </div>
-    <div class="w-2/5"></div>
+    <div class="w-2/5 flex justify-end">
+      <SearchBar />
+      <CartButton />
+    </div>
   </nav>
 </template>
 
